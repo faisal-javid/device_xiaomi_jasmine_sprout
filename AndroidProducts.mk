@@ -15,11 +15,11 @@
 # limitations under the License.
 #
 
-# inherit MI A2 device config for ShapeShiftOS
+# Inherit MI A2 device config for SparkOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_jasmine_sprout.mk
+    $(LOCAL_DIR)/spark_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_jasmine_sprout-user \
-    ssos_jasmine_sprout-userdebug \
-    ssos_jasmine_sprout-eng
+    spark_jasmine_sprout-user \
+    spark_jasmine_sprout-userdebug \
+    spark_jasmine_sprout-eng
