@@ -40,8 +40,8 @@ PRODUCT_NAME := spark_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
-# Inherit SparkOS Unfficial build stuff.
-SPARK_BUILD_TYPE := UNOFFICIAL
+# Inherit SparkOS Official build stuff.
+SPARK_BUILD_TYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
