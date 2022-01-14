@@ -7,9 +7,9 @@
 
 # inherit MI A2 device config for ShapeShiftOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
+    $(LOCAL_DIR)/cipher_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_jasmine_sprout-user \
-    aosp_jasmine_sprout-userdebug \
-    aosp_jasmine_sprout-eng
+    cipher_jasmine_sprout-user \
+    cipher_jasmine_sprout-userdebug \
+    cipher_jasmine_sprout-eng
