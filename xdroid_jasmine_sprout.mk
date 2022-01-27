@@ -17,8 +17,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit SparkOS product configuration
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit XDROID product configuration
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -27,8 +27,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210605.005 7349499 release-keys" \
-    BUILD_FINGERPRINT="google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys"
+    PRIVATE_BUILD_DESC="jasmine-user 9 PKQ1.180904.001 V10.0.9.0.PDIMIXM release-keys" \
+    BUILD_FINGERPRINT="xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
@@ -36,17 +36,18 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := spark_jasmine_sprout
+PRODUCT_NAME := xdroid_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
-# Inherit SparkOS Official build stuff.
-SPARK_BUILD_TYPE := OFFICIAL
+# Inherit XDROID build stuff.L
+XDROID_UI_BLUR := true
+XDROID_BUILD_TYPE := STBL
+XDROID_BOOT_DARK := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# Gapps
-USE_GAPPS := true
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
-
+# TWRP Support
+BUILD_TWRP := false

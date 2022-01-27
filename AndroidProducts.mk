@@ -17,9 +17,9 @@
 
 # Inherit MI A2 device config for SparkOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_jasmine_sprout.mk
+    $(LOCAL_DIR)/xdroid_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_jasmine_sprout-user \
-    spark_jasmine_sprout-userdebug \
-    spark_jasmine_sprout-eng
+    xdroid_jasmine_sprout-user \
+    xdroid_jasmine_sprout-userdebug \
+    xdroid_jasmine_sprout-eng
